@@ -61,7 +61,7 @@ include './connection/database.php'
                     function validate($data)
                     {
                         $data = trim($data);
-                        $data = htmlspecialchars($data);
+                        $dagit ta = htmlspecialchars($data);
                         $data = stripslashes($data);
                         return $data;
                     }
