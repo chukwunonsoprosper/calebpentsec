@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.theblogcotainerbody {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-top: 60px;
+}
+
+.theblogcotainerbody .theherosection {
+    width: 100%;
+    height: 100%;
+}
+
+.theherosection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.theblogcotainerbody .thebodyText {
+    width: 100%;
+    position: absolute;
+    padding: 10px;
+    top: 50%;
+    text-align: center;
+    color: white;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.theblogcotainerbody .thebodyText h2 {
+    font-family: Manrope;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.theblogcotainerbody .thebodyText span {
+    font-family: Manrope;
+    font-weight: 500;
+    margin-top: -10px;
+}
+
+.theBlogs {
+    width: 100%;
+    padding: 20px 100px;
+}
+
+.theBlogs .theblogcontainer {
+    width: 100%;
+    border: 1px solid #e4e4e4;
+    height: 400px;
+    display: flex;
+    margin-bottom: 20px;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.theblogcontainer .theimagecontainer {
+    width: 40%;
+    height: 100%;
+}
+
+.theblogcontainer .theimagecontainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.theblogcontainer .thetextContent {
+    width: 60%;
+    padding: 20px;
+    height: 100%;
+    position: relative;
+}
+
+.thetextContent .theheading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.theheading .adminImage {
+    width: 30px;
+    height: 30px;
+}
+
+.theheading .adminImage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.theheading .theNameAndData {
+    font-family: Manrope;
+    padding-left: 20px;
+}
+
+.theheading .theNameAndData span {
+    display: block;
+}
+
+.theheading .theNameAndData span:first-child {
+    font-weight: 700;
+}
+
+.theheading .theNameAndData span:last-child {
+    font-size: x-small;
+}
+
+.thetextContent .themainBlog {
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.themainBlog {
+    font-family: Manrope;
+}
+
+.themainBlog p {
+    font-family: Manrope;
+    font-size: 20px;
+     line-height: 1.5;
+    font-weight: 700;
+     line-height: 1.5
+}
+
+.thetextContent .thebuttonshare {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.thebuttonshare hr {
+    border: 1px solid #e4e4e4;
+}
+
+.thebuttonshare .shareto {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shareto .share span {
+    font-family: Manrope;
+    font-weight: 500;
+}
+
+
+.shareto .theplatfor i {
+    padding-left: 25px;
+}
+
+.theBlogs .viewall {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.theBlogs .viewall a {
+    padding: 15px 40px;
+    background-color: black;
+    color: white;
+    font-family: Manrope;
+    text-decoration: none;
+}
+
+.theBlogs a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer {
+    width: 100%;
+    padding: 20px 70px;
+    background-color: black;
+}
+
+.footer .head {
+    width: 100%;
+}
+
+.footer .head h2 {
+    font-family: Manrope;
+    font-size: 30px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
+
+.footer .accessiblelinks {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.accessiblelinks .quicklink {
+    width: 30%;
+    text-align: left;
+    color: white;
+    font-family: Manrope;
+}
+
+.accessiblelinks .quicklink span {
+    font-family: Manrope;
+    font-weight: 500;
+    font-size: large;
+}
+
+.quicklink .links {
+    width: 100%;
+    display: block;
+    padding: 15px 0px;
+}
+
+.quicklink .links a {
+    display: block;
+    text-decoration: none;
+    color: #c9c8c8;
+    font-size: smaller;
+    font-family: Manrope;
+    padding: 10px 0px;
+}
+
+.quicklink .links i {
+    padding: 40px 0px;
+    cursor: pointer;
+    padding-right: 30px;
+}
+
+.quicklink .links label,
+input {
+    display: block;
+}
+
+label {
+    font-family: Manrope;
+    font-size: smaller;
+    padding: 10px 0px;
+}
+
+.quicklink .links input {
+    padding: 15px;
+    width: 100%;
+    outline: none;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-family: Manrope;
+}
+
+.quicklink .links button {
+    padding: 15px;
+    width: 100%;
+    outline: none;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-family: Manrope;
+    margin-top: 10px;
+}
+
+.theBlogs .theoverallcontent {
+    width: 100%;
+    border: 1px solid #e4e4e4;
+    padding: 10px;
+    margin-top: 100px;
+}
+
+.theoverallcontent .headoftemplate {
+    width: 100%;
+    position: relative;
+}
+
+.theoverallcontent .headoftemplate img {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    object-fit: cover;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-radius: 100px;
+}
+
+.headoftemplate span {
+    font-family: Manrope;
+    padding-left: 40px;
+    font-weight: 600;
+}
+
+.theoverallcontent .theblogitself {
+    width: 100%;
+    font-family: Manrope;
+}
+
+.theblogitself h2 {
+    font-family: Manrope;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.theblogitself span {
+    font-family: Manrope;
+    white-space: pre-wrap;
+}
+
+.theblogitself .imagecontainer {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.theblogitself .imagecontainer img {
+    width: 100%;
+    height: auto;
+}

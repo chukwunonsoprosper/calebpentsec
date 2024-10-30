@@ -1,0 +1,59 @@
+@media screen and (max-width: 600px) {
+    .navigation .thelinks {
+        display: none;
+    }
+
+    .navigation .searchblog {
+        width: 100%;
+    }
+
+    #menuside {
+        display: block;
+        font-weight: 700;
+    }
+
+    .theBlogs {
+        width: 100%;
+        padding: 20px 20px;
+    }
+
+    .theBlogs .theblogcontainer {
+        width: 100%;
+        display: block;
+        height: unset;
+    }
+
+    .theblogcontainer .theimagecontainer {
+        width: 100%;
+        height: 100%;
+    }
+
+    .theblogcontainer .thetextContent {
+        width: 100%;
+    }
+
+    .thetextContent .thebuttonshare {
+        width: 100%;
+        position: relative;
+        padding: unset;
+    }
+
+        .footer {
+            width: 100%;
+            padding: 20px 40px;
+            background-color: black;
+        }
+
+    .footer .accessiblelinks {
+        width: 100%;
+        display: block;
+    }
+
+    .accessiblelinks .quicklink {
+        width: 100%;
+    }
+
+    .blogcontent {
+        padding: 20px 30px;
+    }
+}
