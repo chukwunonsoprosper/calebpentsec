@@ -56,4 +56,8 @@
     .blogcontent {
         padding: 20px 30px;
     }
+
+    .sideNavigation {
+        display: none;
+    }
 }

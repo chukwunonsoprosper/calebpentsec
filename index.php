@@ -36,7 +36,19 @@ include('./connection/database.php')
                     <span class="material-symbols-outlined"> search </span>
                 </div>
 
-                <p id='menuside'>&#9776</p>
+                <p onclick="showNav()" id='menuside'>&#9776</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="sideNav" class="sideNavigation">
+        <div class="themenucontent">
+            <span onclick="hideNav()">x</span>
+            <div class="links">
+                <a href='./index.php'>Home</a>
+                <a href=''>About</a>
+                <a href="#news">Latest News</a>
+                <a href="#news">Use API</a>
             </div>
         </div>
     </div>
@@ -165,6 +177,7 @@ include('./connection/database.php')
                     <a href="">Connect with creator</a>
                     <a href="">Blogs</a>
                     <a href="">Join community</a>
+                    <a href="">Use API</a>
                 </div>
             </div>
 

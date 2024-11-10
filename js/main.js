@@ -45,3 +45,17 @@ function searchBlog(event) {
     console.log("an error has occur");
   }
 }
+
+function showNav() {
+  let navigation = document.getElementById('sideNav');
+  navigation.style.display = 'block'
+}
+
+function hideNav() {
+  let navigation = document.getElementById('sideNav');
+  navigation.style.display = 'none'
+}
+
+function showNat(){ 
+  alert(1)
+}

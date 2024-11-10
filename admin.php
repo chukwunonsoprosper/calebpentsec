@@ -9,9 +9,9 @@ include './connection/database.php'
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>C4L3B21 BLOG (admin)</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='./js/main.js'></script>
+    <script src='../js/main.js'></script>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="../style/modified.css" />
     <link rel="stylesheet" href="../style/mobile.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
@@ -38,7 +38,19 @@ include './connection/database.php'
                     <span class='material-symbols-outlined'> search </span>
                 </div>
 
-                <p id='menuside'>&#9776</p>
+                <p onclick="showNav()" id='menuside'>&#9776</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="sideNav" class="sideNavigation">
+        <div class="themenucontent">
+            <span onclick="hideNav()">x</span>
+            <div class="links">
+                <a href='./index.php'>Home</a>
+                <a href=''>About</a>
+                <a href="#news">Latest News</a>
+                <a href="#news">Use API</a>
             </div>
         </div>
     </div>
@@ -120,7 +132,7 @@ include './connection/database.php'
 
             <div class='navigation'>
                 <div class='thelinks'>
-                  <a href='../index.php'>Home</a>
+                  <a href='./index.php'>Home</a>
                     <a href=''>About</a>
                     <a href='../index.php#news'>Latest News</a>
                 </div>
@@ -129,7 +141,19 @@ include './connection/database.php'
                     <span class='material-symbols-outlined'> search </span>
                 </div>
 
-                                <p id='menuside'>&#9776</p>
+                <p onclick='showNav()' id='menuside'>&#9776</p>
+            </div>
+        </div>
+    </div>
+
+        <div id='sideNav' class='sideNavigation'>
+        <div class='themenucontent'>
+            <span onclick='hideNav()'>x</span>
+            <div class='links'>
+                <a href='./index.php'>Home</a>
+                <a href=''>About</a>
+                <a href='#news'>Latest News</a>
+                <a href='#news'>Use API</a>
             </div>
         </div>
     </div>
