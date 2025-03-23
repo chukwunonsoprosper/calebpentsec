@@ -9,10 +9,10 @@ include './connection/database.php'
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>C4L3B21 BLOG (admin)</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script src='../js/main.js'></script>
+    <script src='./js/main.js'></script>
     <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="../style/modified.css" />
-    <link rel="stylesheet" href="../style/mobile.css">
+    <link rel="stylesheet" href="./style/modified.css" />
+    <link rel="stylesheet" href="./style/mobile.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
 
@@ -24,14 +24,14 @@ include './connection/database.php'
     <div class='heading'>
         <div class='headingcontent'>
             <div class='blogname'>
-                <span onclick="window.location.href='../index.php'">C4L3B21</span>
+                <span onclick="window.location.href='./index.php'">C4L3B21</span>
             </div>
 
             <div class='navigation'>
                 <div class='thelinks'>
-                    <a href='../index.php'>Home</a>
+                    <a href='./index.php'>Home</a>
                     <a href=''>About</a>
-                    <a href='../index.php#news'>Latest News</a>
+                    <a href='./index.php#news'>Latest News</a>
                 </div>
                 <div class='searchblog'>
                     <input type='text' placeholder='search our blog' />
@@ -69,7 +69,7 @@ include './connection/database.php'
                 </form>
 
                 <?php
-                if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
+                if (isset($_POST['submit'])) {
                     function validate($data)
                     {
                         $data = trim($data);
@@ -132,7 +132,7 @@ include './connection/database.php'
 
             <div class='navigation'>
                 <div class='thelinks'>
-                  <a href='./index.php'>Home</a>
+                  <a href='../index.php'>Home</a>
                     <a href=''>About</a>
                     <a href='../index.php#news'>Latest News</a>
                 </div>
@@ -150,7 +150,7 @@ include './connection/database.php'
         <div class='themenucontent'>
             <span onclick='hideNav()'>x</span>
             <div class='links'>
-                <a href='./index.php'>Home</a>
+                <a href='../index.php'>Home</a>
                 <a href=''>About</a>
                 <a href='#news'>Latest News</a>
                 <a href='#news'>Use API</a>
@@ -168,7 +168,7 @@ include './connection/database.php'
 
             <div class='theblogitself'>
                 <h2>{$blogTitle}</h2>
-                <span>{$description}</span>
+                <span id='description'>{$description}</span>
 
                 <div class='imagecontainer'>
                     <img src='../{$image}' alt=''>
@@ -243,6 +243,8 @@ include './connection/database.php'
                                             </div>
                                         </div>";
                                     fclose($createfile);
+                                } else {
+                                    echo 'an error has occue';
                                 }
                             }
                         }

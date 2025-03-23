@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>cryptiajs documentaion</title>
+    <link rel='stylesheet' href='../style/style.css' />
+    <link rel='stylesheet' href='../style/modified.css' />
+        <link rel='stylesheet' href='./style/mobile.css'>
+    <script src='../js/main.js'></script>
+    <link href='https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css' rel='stylesheet' />
+    <link rel='stylesheet'
+        href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search' />
+</head>
+
+<body>
+    <div class='heading'>
+        <div class='headingcontent'>
+            <div class='blogname'>
+                <span  onclick='window.location.href='/index.php''>C4L3B21</span>
+            </div>
+
+            <div class='navigation'>
+                <div class='thelinks'>
+                  <a href='./index.php'>Home</a>
+                    <a href=''>About</a>
+                    <a href='../index.php#news'>Latest News</a>
+                </div>
+                <div class='searchblog'>
+                    <input type='text' placeholder='search our blog' />
+                    <span class='material-symbols-outlined'> search </span>
+                </div>
+
+                <p onclick='showNav()' id='menuside'>&#9776</p>
+            </div>
+        </div>
+    </div>
+
+        <div id='sideNav' class='sideNavigation'>
+        <div class='themenucontent'>
+            <span onclick='hideNav()'>x</span>
+            <div class='links'>
+                <a href='./index.php'>Home</a>
+                <a href=''>About</a>
+                <a href='#news'>Latest News</a>
+                <a href='#news'>Use API</a>
+            </div>
+        </div>
+    </div>
+
+    <div class='theBlogs'>
+        <div class='theoverallcontent'>
+            <div class='headoftemplate'>
+                <img src='../image/84770f_df0bdbbdd9a94259858e70cbba33897f~mv2_d_3538_2359_s_2.webp' alt=''>
+                <span>Calab .
+                                Mar - 23 - 2025</span>
+            </div>
+
+            <div class='theblogitself'>
+                <h2>cryptiajs documentaion</h2>
+                <span>Cryptia: How to Docs
+
+Overview
+
+Ever wondered how you can utilize encryption and decryption functionalities in your web based projects? Lock your keys, securely share files? All done on both client and server end?
+
+
+Cryptia is a lightweight Open Source JavaScript framework used to encrypt and decrypt strings. It utilizes a text substitution cipher to descramble and replace each text with another following a set pattern. 
+
+
+Installation
+
+Prerequisites for Cryptia Installation:
+Node.js must be up and running on your system so as to allow the npm command work. You can get Node.js for your system’s OS here
+
+If you have the latest version of node.js running on your system, you can proceed with installing Cryptia on your terminal using this command: npm install Cryptia
+
+
+It is a very lightweight library and its installation won’t take time, just a few seconds and you are set to go.
+
+
+Additionally, you can clone the GitHub repo to get Cryptia installed on your system:
+git clone https://github.com/chukwunonsoprosper/cryptia
+cd cryptia
+
+
+Whichever method you choose would do. To confirm that Cryptia has successfully being installed, list available libraries and check for Cryptia.
+ 
+
+
+
+After you have confirmed that it is working, navigate to the Cryptia directory using cd cryptia, and when you are in, run the test using npm run test.
+This will run a test, showcasing how the library works. 
+
+
+Viola, you are good to go!
+
+Setting Up Your Development Workspace
+
+To begin using Cryptia for your project, you will need to set up your workspace. 
+ On your terminal, type in this command: npm run dev
+This will spin up your new dev environment
+
+
+
+Now, you can link your workspace or dev environment with your project, or write an independent encryption script using Cryptia:
+
+Open your project’s folder and import Cryptia into it. 
+
+
+
+
+You can see that I have got my project set and installed Cryptia into it.
+The next thing I am going to do is to copy my workspace.js file from the Cryptia folder.`	
+
+
+
+
+Usage
+
+Importing the Library
+
+To use Cryptia in your project, import it as follows:
+
+import Cryptia from &#039;cryptia&#039;
+
+bash
+Creating an Instance
+
+You can create an instance of Cryptia with optional configuration:
+
+const cryptia = new Cryptia({
+  obfuscationLevel: 10, // the default is 8, but I stepped it up here.
+  logging: true,        // The default is False
+  preserveWhitespace: false // The default is True
+});
+
+
+If you are quite lost on this instance creation, don’t worry, in the next section, it will be explained.
+
+Cryptia Methods
+Cryptia accepts 4 different standards methods for using it. 	While using Cryptia, you are going to come across these methods and this section will make you familiar with them, if you aren’t already.
+
+The encrypt method:
+This method is used to encrypt texts using a provided key called the encryption key. It takes in the method, which is directly below and some parameters
+
+encrypt(text, key, callback = null)
+
+
+
+
+Parameters:
+text (random stuff): The text to encrypt.
+key (specify a key): The encryption key.
+callback (function, optional): A callback function to handle the result.
+
+Returns: 
+This is going to return an object containing:
+data (string): The encrypted text.
+timeTaken (number): Time taken for the operation in milliseconds.
+
+Here is an example of the encrypt method:
+
+const result = cryptia.encrypt(&#039;Hello, readers!&#039;, &#039;my-secret-key&#039;);
+console.log(result.data); // Encrypted text
+
+
+
+The Decrypt Method
+
+The exact opposite of the encrypt method. Since Cryptia is dual functional, it can encrypt and decrypt using the same key (passed as a parameter). Any slight change in the key will result in an entirely different text. This further ensures that only those with the exact same key can decrypt what was previously encrypted.
+Here is how to use it in a function:
+
+decrypt(encryptedText, key, callback = null)`
+
+
+Parameters: 
+
+Like the encrypt method, it accepts similar parameters:
+encryptedText (string): The encrypted text to decrypt.
+key (string): The decryption key.
+callback (function, optional): A callback function to handle the result.
+The decrypt method returns an object containing the decrypted text as a string and the time taken for the operation to be completed, denoted in milliseconds.
+
+Here is an example of the return script:
+
+const result = cryptia.decrypt(encryptedText, &#039;my-secret-key&#039;);
+console.log(result.data); // Original text
+
+
+File contents encryption
+
+Asides from encrypting single strings, Cryptia can also be used to encrypt entire file contents by passing in the file path.
+
+encryptFile(filePath, key, callback = null, outputFileName = &#039;encryptedFile.cpt&#039;)
+
+
+Parameters
+
+Like the others before it, here are the parameters it accepts:
+
+filePath (string): Path to the file to encrypt.
+key (string): The encryption key.
+callback (function, optional): A callback function to handle the result.
+outputFileName (string, optional): Name of the output file. Default is encryptedFile.cpt.
+
+Returns:
+Running this will return an object containing the encrypted content, the timeTaken in milliseconds and this (encryptedFilePath: Path to the encrypted file.)
+
+Here is an example of this:
+
+cryptia.encryptFile(file.txt&#039;, &#039;my-secret-key&#039;);
+
+Decrypt File Contents:
+You can also do the opposite of the file content encryption using the decryptFile method.
+
+decryptFile(filePath, key, callback = null, outputFileName = &#039;decryptedFile.cpt&#039;)
+
+
+Parameters:
+
+Here are the parameters it accepts:
+
+filePath (string): Path to the encrypted file.
+key (string): The decryption key.
+callback (function, optional): A callback function to handle the result.
+outputFileName (string, optional): Name of the output file. Default is &#039;decryptedFile.cpt&#039;.
+
+Returns:
+
+An object containing:
+data (string): The decrypted content.
+timeTaken (number): Time taken for the operation in milliseconds.
+decryptedFilePath (string): Path to the decrypted file.
+
+Here is an example:
+
+cryptia.decryptFile(&#039;encryptedFile.cpt&#039;, &#039;my-secret-key&#039;);
+
+
+Configuration Options
+
+Cryptia provides the following configuration options:
+ObfuscationLevel: This determines the level of obfuscation in integer that is passed during encryption. The default level is 8.
+
+Logging (boolean): The logging option enables or disables logging during its operation, as a boolean, the default is False.
+
+PreserveWhitespace (boolean): Preserves whitespace in the text. The default value is True.
+Use Cases
+Here are some of the practical scenarios that Crypta can come in.
+
+1. Securing Sensitive User Data:
+Encrypt sensitive user data, such as passwords or personal information, before storing it in a database.
+
+2. Encrypting Files for Secure Storage:
+Protect sensitive files, such as configuration files or documents, by encrypting them.
+
+3. Securing Communication Between Services:
+Encrypt messages or payloads sent between services to ensure secure communication.
+
+4. Protecting Configuration Files:
+Encrypt configuration files containing sensitive information, such as API keys or database credentials.
+
+5. Educational Purposes:
+Use Cryptia to demonstrate encryption and decryption concepts in educational settings.
+
+Workspace.js Integration
+
+I briefly touched on the workspace integration, but here is a deep dive into it:
+
+The workspace.js file is a utility module developers can use to connect Cryptia into their project’s workspace. It provides helper functions for managing encryption workflows, such as batch file encryption or automated decryption processes.
+
+Imagine this example scene;
+Suppose you have a directory of files that need to be encrypted. You can use workspace.js to automate this process mimicking this:
+
+import Cryptia from &#039;cryptia&#039;;
+import { encryptDirectory } from &#039;./workspace.js&#039;;
+const cryptia = new Cryptia({ logging: true });
+
+encryptDirectory(&#039;./sensitive-files&#039;, &#039;my-secret-key&#039;, cryptia, (result) =&gt; {
+  console.log(&#039;Batch encryption completed:&#039;, result);
+});
+
+
+Note: Change the file names, directory’s path and keys to yours before using.
+
+Key Features of workspace.js:
+Batch encryption and decryption of files in a directory.
+Logging and error handling for large-scale operations.
+Integration with Cryptia&#039;s core methods.
+
+Extra Notes
+
+Performance Measurement
+
+As seen in the example given under the methods section, Cryptia measures the time taken for each operation and includes it in the result object. This feature is useful for setting expected standards and optimizing project’s workflows.
+
+Logging
+Though it is disabled by default as an option, if logging is enabled, Cryptia logs messages to the console, including operation completion times and file paths.</span>
+
+                <div class='imagecontainer'>
+                    <img src='../image/caleb762563836334112357Screenshot 2025-03-20 at 8.06.01 PM.png' alt=''>
+                </div>
+            </div>
+
+            <div class='thebuttonshare'>
+                <hr />
+
+                <div class='shareto'>
+                    <div class='share'>
+                        <span>Share this blog</span>
+                    </div>
+
+                    <div class='theplatfor'>
+                        <i onclick='shareto(`facebook`, window.location.href)' class='ri-facebook-circle-fill'></i>
+                        <i onclick='shareto(`twitter`, window.location.href)' class='ri-twitter-x-line'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class='footer'>
+        <div class='head'>
+            <h2>Safeguard Your Digital World with the Latest in Cybersecurity</h2>
+        </div>
+
+        <div class='accessiblelinks'>
+            <div class='quicklink'>
+                <span>Quick links</span>
+
+                <div class='links'>
+                    <a href=''>Home</a>
+                    <a href=''>Connect with creator</a>
+                    <a href=''>Blogs</a>
+                    <a href=''>Join community</a>
+                </div>
+            </div>
+
+            <div class='quicklink'>
+                <span>Join our newsletter</span>
+
+                <div class='links'>
+                    <label for='email'>Email</label>
+                    <input type='text' id='email' placeholder='Enter your email'>
+                    <button>Subscribe</button>
+                </div>
+            </div>
+
+            <div class='quicklink'>
+                <span>Follow Our Blog</span>
+
+                <div class='links'>
+                    <i class='ri-facebook-circle-fill'></i>
+                    <i class='ri-twitter-x-line'></i>
+                    <i class='ri-whatsapp-fill'></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

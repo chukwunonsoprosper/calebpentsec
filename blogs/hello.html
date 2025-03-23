@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>hello</title>
+    <link rel='stylesheet' href='./style/style.css' />
+    <link rel='stylesheet' href='./style/modified.css' />
+        <link rel='stylesheet' href='./style/mobile.css'>
+    <script src='./js/main.js'></script>
+    <link href='https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css' rel='stylesheet' />
+    <link rel='stylesheet'
+        href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search' />
+</head>
+
+<body>
+    <div class='heading'>
+        <div class='headingcontent'>
+            <div class='blogname'>
+                <span  onclick='window.location.href='/index.php''>C4L3B21</span>
+            </div>
+
+            <div class='navigation'>
+                <div class='thelinks'>
+                  <a href='./index.php'>Home</a>
+                    <a href=''>About</a>
+                    <a href='../index.php#news'>Latest News</a>
+                </div>
+                <div class='searchblog'>
+                    <input type='text' placeholder='search our blog' />
+                    <span class='material-symbols-outlined'> search </span>
+                </div>
+
+                <p onclick='showNav()' id='menuside'>&#9776</p>
+            </div>
+        </div>
+    </div>
+
+        <div id='sideNav' class='sideNavigation'>
+        <div class='themenucontent'>
+            <span onclick='hideNav()'>x</span>
+            <div class='links'>
+                <a href='./index.php'>Home</a>
+                <a href=''>About</a>
+                <a href='#news'>Latest News</a>
+                <a href='#news'>Use API</a>
+            </div>
+        </div>
+    </div>
+
+    <div class='theBlogs'>
+        <div class='theoverallcontent'>
+            <div class='headoftemplate'>
+                <img src='../image/84770f_df0bdbbdd9a94259858e70cbba33897f~mv2_d_3538_2359_s_2.webp' alt=''>
+                <span>Calab .
+                                Mar - 23 - 2025</span>
+            </div>
+
+            <div class='theblogitself'>
+                <h2>hello</h2>
+                <span>welcome to this blog</span>
+
+                <div class='imagecontainer'>
+                    <img src='../image/caleb227754769513942351Screenshot 2025-03-22 at 11.00.04 AM.png' alt=''>
+                </div>
+            </div>
+
+            <div class='thebuttonshare'>
+                <hr />
+
+                <div class='shareto'>
+                    <div class='share'>
+                        <span>Share this blog</span>
+                    </div>
+
+                    <div class='theplatfor'>
+                        <i onclick='shareto(`facebook`, window.location.href)' class='ri-facebook-circle-fill'></i>
+                        <i onclick='shareto(`twitter`, window.location.href)' class='ri-twitter-x-line'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class='footer'>
+        <div class='head'>
+            <h2>Safeguard Your Digital World with the Latest in Cybersecurity</h2>
+        </div>
+
+        <div class='accessiblelinks'>
+            <div class='quicklink'>
+                <span>Quick links</span>
+
+                <div class='links'>
+                    <a href=''>Home</a>
+                    <a href=''>Connect with creator</a>
+                    <a href=''>Blogs</a>
+                    <a href=''>Join community</a>
+                </div>
+            </div>
+
+            <div class='quicklink'>
+                <span>Join our newsletter</span>
+
+                <div class='links'>
+                    <label for='email'>Email</label>
+                    <input type='text' id='email' placeholder='Enter your email'>
+                    <button>Subscribe</button>
+                </div>
+            </div>
+
+            <div class='quicklink'>
+                <span>Follow Our Blog</span>
+
+                <div class='links'>
+                    <i class='ri-facebook-circle-fill'></i>
+                    <i class='ri-twitter-x-line'></i>
+                    <i class='ri-whatsapp-fill'></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
